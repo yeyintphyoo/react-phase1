@@ -22,4 +22,5 @@ spec:
           image: cescye/react-phase1:latest
           ports:
             - containerPort: 80
+          imagePullPolicy: Always
 
