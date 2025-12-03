@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-frontend
+  namespace: react
+  labels:
+    app: react-frontend
+    version: v2
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: react-frontend
+  template:
+    metadata:
+      labels:
+        app: react-frontend
+        version: v2
+    spec:
+      containers:
+        - name: react
+          image: cescye/react-phase1:canary-v1
+          ports:
+            - containerPort: 80
+
