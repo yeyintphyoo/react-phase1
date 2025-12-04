@@ -1,7 +1,7 @@
 apiVersion: networking.istio.io/v1beta1
 kind: VirtualService
 metadata:
-  name: react-vs-v1
+  name: react-vs-v2
   namespace: react
 spec:
   hosts:
@@ -12,7 +12,10 @@ spec:
   - route:
     - destination:
         host: react-frontend
-        port:
-          number: 80
-      weight: 100
+        subset: v1
+      weight: 90
+    - destination:
+        host: react-frontend
+        subset: v2
+      weight: 10
 
