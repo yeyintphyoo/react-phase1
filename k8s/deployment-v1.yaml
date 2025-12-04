@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react-frontend
+  name: react-frontend-v1
   namespace: react
   labels:
     app: react-frontend
     version: v1
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: react-frontend

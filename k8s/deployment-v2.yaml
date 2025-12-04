@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: react-frontend
+  name: react-frontend-v2
   namespace: react
   labels:
     app: react-frontend
