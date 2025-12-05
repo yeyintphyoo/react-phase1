@@ -5,7 +5,7 @@ metadata:
   namespace: react
 spec:
   hosts:
-  - "*"
+  - "react.example.com"
   gateways:
   - react-gateway
   http:
