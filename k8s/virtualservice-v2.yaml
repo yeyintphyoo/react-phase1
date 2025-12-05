@@ -7,7 +7,7 @@ spec:
   hosts:
   - "react.example.com"
   gateways:
-  - react-gateway
+  - istio-system/react-gateway
   http:
   - route:
     - destination:
