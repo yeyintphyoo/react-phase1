@@ -23,6 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 #Secret_Cert
-/react-cert 
+.react-cert 
 .ssh
 
