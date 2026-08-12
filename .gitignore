@@ -25,4 +25,5 @@ yarn-error.log*
 #Secret_Cert
 /.secret-react
 /.ssh
+virtualservice-v1.yaml.old
 
